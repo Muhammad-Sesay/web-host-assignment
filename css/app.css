@@ -129,6 +129,10 @@ body{
 }
 
 
+.gallery-section {
+    background-color: #bdc3c7;
+}
+
 .gallery-section .images .card img {
     height: 400px;
 }
