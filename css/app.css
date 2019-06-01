@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Berthy";
+    /* src: url("css/fonts/Abhayas.ttf"); */
+    src: url("css/fonts/Billortte One_Regular TTF.ttf");
+}
+
+.vid-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 19rem;
+    padding-right: 19rem;
+    margin: auto;
+    text-align: center;
+}
+
+.video-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-wrapper video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(#2b5876, #4e4376); */
+    /* background: linear-gradient(#aa4b6b,#6b6b83,#3b8d99); */
+    background: linear-gradient(#7f7fd5, #86a8e7, #91eae4);
+
+    /* background: #225470; */
+    z-index: 1; /* z-index: to make the over-lay always ontop of the video. NOTE:- The higher the z-index the closer the object; the lower the z-index the farther the object*/
+    opacity: 0.55;
+}
+
+.header-content{
+    z-index: 2;
+    /* position: absolute;
+    background-color: #000;
+    opacity: 0.2;
+    padding: 0 10px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    height: 30vh;
+    width: 20vw; */
+}
+
+.header-content h2{
+    font-size: 25px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.header-content h3{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Berthy';
+    color: #000000;
+    opacity: 0.7;
+}
+
+.header-content p{
+    font-size: 1rem;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.bio-section {
+    background-color: #ecf0f1;
+    /* background-image: url('../imgs/apple-desk-laptop-7104.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.bio-section .container {
+    padding: 30px;
+}
+
+.bio-section .container {
+    padding: 30px;
+}
+
+.profile-image {
+    margin: 20px 0;
+}
+
+.bio-info h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.bio-info p{
+    color: #777879;
+    font-size: 16px;
+    justify-content: left;
+}
+
+
+.gallery-section .images .card img {
+    height: 400px;
+}
+
+.gallery-section .images .card:hover {
+    color: #000;
+    opacity: 0.65;
+    transition: 1s;
+}
+
+.quotes-section {
+    background: linear-gradient(#7f7fd5, #86a8e7, #91eae4);
+}
+
+.footer-section{
+    background-color: #34495e;
+    height: 100px;
+}
+
+.footer-section p{
+    color: #fff;
+}
+
+
+/* ---------------------- */
+
+@media(min-width: 960){
+    .header-content{
+        height: 100vh;
+        width: 100vw;
+    }
+}
